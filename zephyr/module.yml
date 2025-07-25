@@ -1,3 +1,4 @@
+name: zmk-keyboards-Guard-Gaming-Tad
 build:
   settings:
     board_root: .
