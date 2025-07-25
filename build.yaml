@@ -20,4 +20,4 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: Guard-Gaming-Pad
+    shield: Guard_Gaming_Pad
