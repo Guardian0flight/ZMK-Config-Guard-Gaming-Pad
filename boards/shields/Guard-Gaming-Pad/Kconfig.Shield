@@ -1,2 +1,2 @@
 config SHIELD_GUARD_GAMING_PAD
-    def_bool $(shields_list_contains,)
+    def_bool $(shields_list_contains,Guard_Gaming_Pad)
