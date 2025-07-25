@@ -1,0 +1,7 @@
+if SHIELD_GUARDGAMINGPAD
+
+config ZMK_KEYBOARD_NAME
+    default "Guard-Gaming-Pad"
+
+    end if
+
