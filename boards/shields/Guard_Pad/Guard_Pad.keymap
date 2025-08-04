@@ -13,7 +13,7 @@
         //   tab q  w  e  r  t
         //   lctr a  s  d  f  g
         //  lsft z  x  c  v  b
-        //          cap win lyr    n m 
+        //          lalt win lyr    n m 
         //                       spc 6
             bindings = <
                 &kp ESC    &kp F1   &kp F2   &kp F3   &kp F4
@@ -21,7 +21,7 @@
                 &kp TAB   &kp Q   &kp W   &kp E   &kp R   &kp T
                 &kp LCTRL &kp A   &kp S   &kp D   &kp F   &kp G
                 &kp LSHFT &kp Z   &kp X   &kp C   &kp V   &kp B   &kp N &kp M
-                                     &kp CAPS  &kp LGUI  &mo 1    &kp SPACE &kp N6
+                                     &kp LALT  &kp LGUI  &mo 1    &kp SPACE &kp N6
             >;
         };
          bt_layer { 
@@ -29,17 +29,17 @@
         //   bt clear  bt0 bt1 bt2 bt3
         //   rgb rgb rgb rgb rgb rgb 
         //   none  rgb rgb rgb rgb rgb
-        //   none none none none none none
-        //   boot none none none none none 
-        //          none none none   none none
+        //   none none none none up none
+        //   boot none none left down right 
+        //          CAPS none none   none none
         //                          none none
             bindings = <
                 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
                 &rgb_ug RGB_TOG   &rgb_ug RGB_BRI   &rgb_ug RGB_HUI   &rgb_ug RGB_SAI   &rgb_ug RGB_SPI    &rgb_ug RGB_EFF 
                 &none             &rgb_ug RGB_BRD   &rgb_ug RGB_HUD   &rgb_ug RGB_SAD   &rgb_ug RGB_SPD    &rgb_ug RGB_EFR 
-                &none  &none  &none  &none  &none  &none
-                &bootloader &none  &none  &none  &none  &none    &none  &none
-                                       &none  &none  &none      &none  &none 
+                &none  &none  &none  &none  &kp UP   &none
+                &bootloader &none  &none  &kp RIGHT  &kp DOWN  &kp LEFT    &none  &none
+                                 &kp CAPS  &none  &none                 &none  &none 
             >;
         };
     };
