@@ -28,18 +28,18 @@
             // Layer 1
         //   bt clear  bt0 bt1 bt2 bt3
         //   rgb rgb rgb rgb rgb rgb 
-        //   none  rgb rgb rgb rgb rgb
-        //   none none none none up none
-        //   boot none none left down right 
+        //   trans  rgb rgb rgb rgb rgb
+        //   trans none none none up none
+        //   trans none none left down right 
         //          CAPS none none   none none
-        //                          none none
+        //                          none boot
             bindings = <
                 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
                 &rgb_ug RGB_TOG   &rgb_ug RGB_BRI   &rgb_ug RGB_HUI   &rgb_ug RGB_SAI   &rgb_ug RGB_SPI    &rgb_ug RGB_EFF 
-                &none             &rgb_ug RGB_BRD   &rgb_ug RGB_HUD   &rgb_ug RGB_SAD   &rgb_ug RGB_SPD    &rgb_ug RGB_EFR 
-                &none  &none  &none  &none  &kp UP   &none
-                &bootloader &none  &none  &kp RIGHT  &kp DOWN  &kp LEFT    &none  &none
-                                 &kp CAPS  &none  &none                 &none  &none 
+                &trans            &rgb_ug RGB_BRD   &rgb_ug RGB_HUD   &rgb_ug RGB_SAD   &rgb_ug RGB_SPD    &rgb_ug RGB_EFR 
+                &trans  &none  &none  &none  &kp UP   &none
+                &trans &none  &none  &kp LEFT  &kp DOWN  &kp RIGHT    &none  &none
+                                 &kp CAPS  &none  &none                 &none  &bootloader 
             >;
         };
     };
